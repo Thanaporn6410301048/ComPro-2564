@@ -1,0 +1,15 @@
+# 16
+# Write a Python program to print all unique values in a dictionary.  # เขียนโปรแกรมงูเหลือมที่แสดงค่าข้อมูลทั้งหมดในพจนานุกรม
+#Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'}
+
+Sample_List = [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"},{"VII":"S005"}, 
+{"V":"S009"},{"VIII":"S007"}]
+Expected_List = set()                           # ค่าในนี้เก็บข้อมูลที่ไม่ซ้ำกัน
+
+for i in range(len(Sample_List)):           # วนลูปในลิสต์ Sample_List
+  export = Sample_List[i]                     # กำหนดตัวแปร export ให้เท่ากับ ลำดับ value ของ Sample_List
+  for j in export:                                  # วนลูปใน export
+    if export[j] not in Expected_List:       # ถ้า ลำดับ value ใน export ยังไม่มีใน Expected_List ให้ add เข้าไปใน Expected_List (ซึ่งตอนนี้ใน Expected_List ยังว่างอยู่)
+      Expected_List.add(export[j])
+
+print(Expected_List)
