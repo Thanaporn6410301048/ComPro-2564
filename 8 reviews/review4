@@ -1,0 +1,38 @@
+# ผสมสี
+ 
+Color_list = ["red", "green", "blue"]
+ 
+ 
+ 
+def Color():
+  print("จงใส่แม่สีที่ต้องการผสม")
+ 
+  Color1 = input("Color mixed1 : ")
+  Color2 = input("Color mixed2 : ")
+ 
+  Color1 = Color1.lower()
+  Color2 = Color2.lower()
+ 
+  if Color1 == Color2:
+    print("คุณพิมพ์ผิดรึป่าว คุณอาจจะผสมสีเดียวกันหรือพิมพ์ผิดก็ได้ ลองพิมพ์ใหม่สิ")
+    Color()
+  
+  if Color1 == "red":
+    if Color2 == "blue":
+      print("Purple")
+    elif Color2 == "yellow":
+      print("Orange")
+ 
+  elif Color1 == "blue":
+    if Color2 == "red":
+      print("Purple")
+    elif Color2 == "yellow":
+      print("Green")
+  
+  elif Color1 == "yellow":
+    if Color2 == "red":
+      print("Orange")
+    elif Color2 == "blue":
+      print("Green")
+ 
+Color()
