@@ -1,0 +1,46 @@
+# โปรแกรม สั่งกาแฟตามสั่ง 
+ 
+List_Menu = []
+size_total = []
+ 
+Hello = input("ระบุชื่อผู้ใช้ : ")
+n = int(input("ลูกค้า ต้องการสั่งกี่แก้ว : "))
+
+def size():
+  print("เลือกขนาดไซส์ S = 65 บาท, M = 85 บาท, L = 105 บาท")
+  ans_size = input("ต้องการไซส์ขนาดเท่าไหร่ :").lower()
+  if ans_size == 's':
+    size_total.append(65)
+  elif ans_size == 'm':
+    size_total.append(85)
+  elif ans_size == 'l':
+    size_total.append(105)
+
+for i in range(n):
+  
+  ans1 = input("ต้องการชา กด 1 ต้องการกาแฟ กด 2 : ")
+  if ans1 == '1' :
+    ans1_1 = input("ต้องการนมหรือไม่ ต้องการ กด 1 ไม่ต้องการ กด 2: ")
+    if ans1_1 == '1' :
+      print("ขอแนะนำ ---Taiwanese Milk Tea ---")
+      List_Menu.append("Taiwanese Milk Tea")
+      size()
+    elif ans1_1 == '2' :
+      print("ขอแนะนำ ---Fruity Tea ---")
+      List_Menu.append("Fruity Tea")
+      size()
+  if ans1 == '2' :
+    ans1_2 = input("ต้องการนมหรือไม่ ต้องการ กด 1 ไม่ต้องการ กด 2: ")
+    if ans1_2 == '1' :
+      print("ขอแนะนำ ---Americano ---")
+      List_Menu.append("Americano")
+      size()
+    elif ans1_2 == '2' :
+      print("ขอแนะนำ --- Latte ---")
+      List_Menu.append("Latte")
+      size()
+  
+#Total()
+print("#---------------------------------------------------------------------------------------------------------------------------------------#")
+print("คุณลูกค้าได้สั่ง", List_Menu, "จำนวนทั้งหมด", n, "รายการ")
+print("ราคารวมทั้งหมด", sum(size_total), "บาท")
