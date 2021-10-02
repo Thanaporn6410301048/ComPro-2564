@@ -1,0 +1,4 @@
+#1
+alist = [100, 200, 300, 400, 500]
+alist.sort(reverse=True)
+print(alist)
