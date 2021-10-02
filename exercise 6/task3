@@ -1,0 +1,6 @@
+#3
+aList = [1, 2, 3, 4, 5, 6, 7]
+bList = []
+for i in range(len(aList)):
+  bList.append(aList[i]**2)
+print(bList)
