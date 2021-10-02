@@ -1,0 +1,10 @@
+#10
+sampleist = [{'id': '#FF0000', 'color': 'Red'}, {'id': '#800000', 'color': 'Maroon'}, 
+            {'id': '#FFFFOO','color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
+id = '#FF0000'
+for i in range(len(sampleist)):
+  check = sampleist[i]
+  if id == check['id']:
+    del sampleist[i]
+    break
+print(sampleist)
