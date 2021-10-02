@@ -1,0 +1,28 @@
+import random
+
+n = random.randint(1,100)
+
+def Guess():
+  try:
+    Number_input = int(input("Can you Guess Number: "))
+
+    if Number_input < n:
+      print("Too less")
+      Guess()
+    if Number_input > n:
+      print("Too Much")
+      Guess()
+   
+    elif Number_input == n:
+      print("Congratulation")
+      Ans = input("if you want check answer press enter ' 1 ' : ")
+      if Ans == '1':
+        print("You anwser is :", n)
+
+  except:
+    print("---Error!! input again ---")
+    Guess()
+  
+
+Guess()
+
