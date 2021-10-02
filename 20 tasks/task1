@@ -1,0 +1,7 @@
+# 1
+
+Key = ["Ten", "Twenty", "Thirty"]
+Value = [10, 20, 30]
+
+DicNum = dict(zip(Key, Value))
+print(DicNum)
