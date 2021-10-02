@@ -1,0 +1,13 @@
+#5
+aList = [10, 20, 30, 40]
+bList = [100, 200, 300, 400]
+
+for i in range(4):
+  print(aList[i], " ", bList[len(bList)-i-1])
+
+print()
+#or
+
+bList.sort(reverse=True)
+for i in range(4):
+  print(aList[i], " ", bList[i]) 
