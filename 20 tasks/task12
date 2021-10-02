@@ -1,0 +1,5 @@
+#12
+dict1 = {0: 10, 1: 20}
+dict2 = {2:30}
+dict1.update(dict2)
+print(dict1)
