@@ -1,0 +1,14 @@
+#6
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+del list1[1], list1[3]
+print(list1)
+
+print()
+
+#or
+list2 =  ["Mike", "", "Emma", "Kelly", "", "Brad"]
+for i in list2:
+  if i == "":
+    list2.remove("")
+    
+print(Del_nonetype)
