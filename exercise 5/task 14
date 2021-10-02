@@ -1,0 +1,17 @@
+def string_test(s):
+    dic={"Upper_case":0, "Lower_case":0, "Special_case":0}
+    for i in s:
+        if not i.isupper() and not i.islower() :
+          dic["Special_case"]+=1
+        elif i.isupper():
+           dic["Upper_case"]+=1
+        elif i.islower():
+           dic["Lower_case"]+=1
+        
+    print("Sentence : ", s)
+    print("Number of Upper case : ", dic["Upper_case"])
+    print("Number of Lower case : ", dic["Lower_case"])
+    print("Number of Special case", dic["Special_case"])
+
+Input_str = input("Input Sentence : ")
+string_test(Input_str)
