@@ -1,0 +1,9 @@
+#18
+sample_data = [{'id': 1, 'success': True, 'name': 'Lary'},{'id': 2, 'success': False,
+               'name': 'Rabil'}, {'id':3, 'success': True, 'name': 'Alex'}]
+count = 0
+for i in range(len(sample_data)):
+  n = sample_data[i]
+  if n["success"] == True:
+    count += 1
+print("Count of how many dictionaries have success as True = ",count)
