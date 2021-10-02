@@ -1,0 +1,10 @@
+# บวกความยาวชื่่อ
+ 
+User1 = input("User input 1 : ")
+User2 = input("User input 2 : ")
+ 
+Len_User1 = print("ความยาวตัวที่ 1 = ",len(User1))
+Len_User2 = print("ความยาวตัวที่ 2 = ",len(User2))
+sum = len(User1)+len(User2)
+ 
+print("ความยาวของชื่อทั้งสองบวกกัน จะได้ค่า เท่ากับ",sum)
