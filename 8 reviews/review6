@@ -1,0 +1,11 @@
+for i in range(1, 100+1):
+  if i % 3 == 0 and i % 7 == 0 :
+    print("chitralada digital")
+  if i % 7 == 0:
+    print("digital")
+  elif i % 3 != 0 :
+    print(i)
+  elif i % 3 == 0:
+    print("chitralada")
+  else:
+    print(i)
